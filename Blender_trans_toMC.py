@@ -60,7 +60,7 @@ class Blender_Camera_Output:
                 sort_5.append({"Value":str(tt.rotation_euler[1]/math.pi*180)+"d","Tick":behind})
                 y=Scene.render.resolution_y
                 x=Scene.render.resolution_x
-                vertical=math.atan2(y/2,(x/2)/math.tan((bpy.data.cameras[thing2].angle)/2))/math.pi*180*2
+                vertical=math.atan2(y/2,(x/2)/math.tan((bpy.data.cameras[thing2].angle)/2))/math.pi*180*2/1.1
                 sort_6.append({"Value":str(vertical)+"d","Tick":behind})
                 bpy.ops.object.delete(use_global=False, confirm=False)
                 thing.select_set(True)
